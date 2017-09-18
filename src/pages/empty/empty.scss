@@ -1,6 +1,6 @@
-page-home 
-{
-    .SwipedTabs-indicatorSegment
+page-empty {
+	
+	 .SwipedTabs-indicatorSegment
     {
         -webkit-transition: 0.3s all;
         -moz-transition:  0.3s all;
@@ -10,20 +10,21 @@ page-home
         height: 1px;
 	    position: relative;
 	    top: -2px;
-	    background-color: black !important;
+	    background-color: blue !important;
     }
     .SwipedTabs-tabs ion-segment-button
     {
     	border:none !important;
-    	color:gray!important;
+    	color:green!important;
     	background-color:white!important;
     }
      .SwipedTabs-tabs ion-segment-button.SwipedTabs-activeTab
     {
-        color:black !important;
+        color:blue !important;
     }
     .SwipedTabs-tabs
     {
     	border-bottom: solid 1px #e6e6e6  !important;
     }
+
 }

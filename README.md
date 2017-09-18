@@ -1,26 +1,11 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+This is a starter template for swipedTabs in ionic 3 .
 
-## How to use this template
+# a simple example using swiped tabs  IONIC 3
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+[Youtube Link](https://www.youtube.com/watch?v=dJTFt0aeRUo&feature=youtu.be)<br>
+![](ionic3SwipedTabs.gif)<br>
 
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
-
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
+#Need Custom Work? 
+If you need help with your Ionic apps, if you need a specific plugin or integration. Let's get in touch. I'll be glad to develop or advise you for your app! Email me at karraysoufien@gmail.com.
 
