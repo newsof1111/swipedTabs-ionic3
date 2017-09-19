@@ -1,4 +1,4 @@
-page-empty {
+page-many-tabs {
 	
 	 .SwipedTabs-indicatorSegment
     {
@@ -11,12 +11,15 @@ page-empty {
 	    position: relative;
 	    top: -2px;
 	    background-color: blue !important;
+
+
     }
     .SwipedTabs-tabs ion-segment-button
     {
     	border:none !important;
     	color:green!important;
     	background-color:white!important;
+        
     }
      .SwipedTabs-tabs ion-segment-button.SwipedTabs-activeTab
     {
@@ -24,6 +27,7 @@ page-empty {
     }
     .SwipedTabs-tabs
     {
+        width: fit-content !important;
     	border-bottom: solid 1px #e6e6e6  !important;
     }
 
