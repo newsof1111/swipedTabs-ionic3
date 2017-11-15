@@ -7,12 +7,14 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ManyTabsPage } from '../pages/many-tabs/many-tabs';
+import { GoogleplayTabsPage } from '../pages/googleplay-tabs/googleplay-tabs';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ManyTabsPage
+    ManyTabsPage,
+    GoogleplayTabsPage
   ],
   imports: [
     BrowserModule,
@@ -22,7 +24,8 @@ import { ManyTabsPage } from '../pages/many-tabs/many-tabs';
   entryComponents: [
     MyApp,
     HomePage,
-    ManyTabsPage
+    ManyTabsPage,
+    GoogleplayTabsPage
   ],
   providers: [
     StatusBar,

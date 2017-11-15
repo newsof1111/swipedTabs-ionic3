@@ -1,0 +1,66 @@
+page-googleplay-tabs {
+ .SwipedTabs-indicatorSegment
+    {
+        -webkit-transition: 0.2s all;
+        -moz-transition:  0.2s all;
+        -o-transition:  0.2s all;
+        transition:  0.2s all;
+        transform-origin: top 0 left 0;
+        height: 1px;
+      position: relative;
+      top: -2px;
+      background-color: blue !important;
+    }
+
+    .SwipedTabs-tabs ion-segment-button
+    {
+      border:none !important;
+      color:green!important;
+      background-color:white!important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+     .SwipedTabs-tabs ion-segment-button.SwipedTabs-activeTab
+    {
+        color:blue !important;
+    }
+
+    .SwipedTabs-tabs
+    {
+        width: fit-content !important;
+    }
+
+     .toolbar *
+    {
+        margin: 0 !important;
+    }
+
+    .tabsContent .scroll-content
+    {
+        overflow-x: scroll !important;
+    }
+
+    .tabsContent
+    {
+        height: 50px !important;
+    }
+
+    .segment-button
+    {
+        max-width: initial !important;
+        flex: auto !important;
+        width: initial !important;
+    }
+}
+
+.ios{
+    page-googleplay-tabs {
+        .SwipedTabs-indicatorSegment
+        {
+            position: relative;
+            top: 44px !important;
+        }
+
+    }
+}

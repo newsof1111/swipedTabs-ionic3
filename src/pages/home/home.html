@@ -9,9 +9,9 @@
 <ion-content >
 
 	<ion-segment  class="SwipedTabs-tabs"  >
-		<ion-segment-button *ngFor='let tab of tabs ; let i = index ' value="IngoreMe" (click)="selectTab(i)" 
-		[ngClass]='{ "SwipedTabs-activeTab" : ( this.SwipedTabsSlider  && ( this.SwipedTabsSlider.getActiveIndex() === i || (  tabs.length -1 === i&& this.SwipedTabsSlider.isEnd()))) }' > 
-			{{tab}}  
+		<ion-segment-button *ngFor='let tab of tabs ; let i = index ' value="IngoreMe" (click)="selectTab(i)"
+		[ngClass]='{ "SwipedTabs-activeTab" : ( this.SwipedTabsSlider  && ( this.SwipedTabsSlider.getActiveIndex() === i || (  tabs.length -1 === i&& this.SwipedTabsSlider.isEnd()))) }' >
+			{{tab}}
 		</ion-segment-button>
 	</ion-segment>
 
@@ -19,8 +19,8 @@
 	<div id='indicator' class="SwipedTabs-indicatorSegment" [ngStyle]="{'width.%': (100/this.tabs.length)}"></div>
 
 	<ion-slides #SwipedTabsSlider  (ionSlideDrag)="animateIndicator($event)"
-							(ionSlideWillChange)="updateIndicatorPosition()" 
-							(ionSlideDidChange)="updateIndicatorPosition()" 
+							(ionSlideWillChange)="updateIndicatorPosition()"
+							(ionSlideDidChange)="updateIndicatorPosition()"
 							(pan)="updateIndicatorPosition()"
 							[pager]="false"
 				>

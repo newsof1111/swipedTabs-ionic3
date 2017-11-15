@@ -5,64 +5,64 @@
     <ion-title>Empty</ion-title>
   </ion-navbar>
 <ion-content  #scroll scrollX="true" scrollY="false" style="height: 50px;">
-	<ion-segment  class="SwipedTabs-tabs"  >
-		<ion-segment-button *ngFor='let tab of tabs ; let i = index ' value="IngoreMe" (click)="selectTab(i)" 
-		[ngClass]='{ "SwipedTabs-activeTab" : ( this.SwipedTabsSlider  && ( this.SwipedTabsSlider.getActiveIndex() === i || (  tabs.length -1 === i&& this.SwipedTabsSlider.isEnd()))) }'  [ngStyle]="{'width.px': (this.tabElementWidth_px)}" > 
-			{{tab}}  
-		</ion-segment-button>
-	</ion-segment>
+  <ion-segment  class="SwipedTabs-tabs"  >
+    <ion-segment-button *ngFor='let tab of tabs ; let i = index ' value="IngoreMe" (click)="selectTab(i)"
+    [ngClass]='{ "SwipedTabs-activeTab" : ( this.SwipedTabsSlider  && ( this.SwipedTabsSlider.getActiveIndex() === i || (  tabs.length -1 === i&& this.SwipedTabsSlider.isEnd()))) }'  [ngStyle]="{'width.px': (this.tabElementWidth_px)}" >
+      {{tab}}
+    </ion-segment-button>
+  </ion-segment>
 
-	<!-- here is our dynamic line  "indicator"-->
-	<div id='indicator' class="SwipedTabs-indicatorSegment" [ngStyle]="{'width.px': (this.tabElementWidth_px)}" ></div>
+  <!-- here is our dynamic line  "indicator"-->
+  <div id='indicator' class="SwipedTabs-indicatorSegment" [ngStyle]="{'width.px': (this.tabElementWidth_px)}" ></div>
 </ion-content>
 </ion-header>
 
 <ion-content >
 
 
-	<ion-slides #SwipedTabsSlider  (ionSlideDrag)="animateIndicator($event)"
-							(ionSlideWillChange)="updateIndicatorPosition()" 
-							(ionSlideDidChange)="updateIndicatorPosition()" 
-							(pan)="updateIndicatorPosition()"
-							[pager]="false"
-				>
-		<ion-slide>
-			<h1>Page 1 </h1>
-		</ion-slide>
-		<ion-slide>
-			<h1>Page 2 </h1>
-		</ion-slide>
-		<ion-slide>
-			<h1>Page 3 </h1>
-		</ion-slide>
-		<ion-slide>
-			<h1>Page 4 </h1>
-		</ion-slide>
-		<ion-slide>
-			<h1>Page 5 </h1>
-		</ion-slide>
-		<ion-slide>
-			<h1>Page 6 </h1>
-		</ion-slide>
-		<ion-slide>
-			<h1>Page 7 </h1>
-		</ion-slide>
-		<ion-slide>
-			<h1>Page 8 </h1>
-		</ion-slide>
-		<ion-slide>
-			<h1>Page 9 </h1>
-		</ion-slide>
-		<ion-slide>
-			<h1>Page 10 </h1>
-		</ion-slide>
-		<ion-slide>
-			<h1>Page 11 </h1>
-		</ion-slide>
-		<ion-slide>
-			<h1>Page 12 </h1>
-		</ion-slide>
-	</ion-slides>
+  <ion-slides #SwipedTabsSlider  (ionSlideDrag)="animateIndicator($event)"
+              (ionSlideWillChange)="updateIndicatorPosition()"
+              (ionSlideDidChange)="updateIndicatorPosition()"
+              (pan)="updateIndicatorPosition()"
+              [pager]="false"
+        >
+    <ion-slide>
+      <h1>Page 1 </h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Page 2 </h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Page 3 </h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Page 4 </h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Page 5 </h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Page 6 </h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Page 7 </h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Page 8 </h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Page 9 </h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Page 10 </h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Page 11 </h1>
+    </ion-slide>
+    <ion-slide>
+      <h1>Page 12 </h1>
+    </ion-slide>
+  </ion-slides>
 
 
 </ion-content>

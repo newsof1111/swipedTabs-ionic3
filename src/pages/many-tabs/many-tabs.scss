@@ -1,6 +1,6 @@
 page-many-tabs {
-	
-	 .SwipedTabs-indicatorSegment
+
+     .SwipedTabs-indicatorSegment
     {
         -webkit-transition: 0.3s all;
         -moz-transition:  0.3s all;
@@ -8,18 +8,18 @@ page-many-tabs {
         transition:  0.3s all;
         transform-origin: top 0 left 0;
         height: 1px;
-	    position: relative;
-	    top: -2px;
-	    background-color: blue !important;
+        position: relative;
+        top: -2px;
+        background-color: blue !important;
 
 
     }
     .SwipedTabs-tabs ion-segment-button
     {
-    	border:none !important;
-    	color:green!important;
-    	background-color:white!important;
-        
+        border:none !important;
+        color:green!important;
+        background-color:white!important;
+
     }
      .SwipedTabs-tabs ion-segment-button.SwipedTabs-activeTab
     {
@@ -28,7 +28,7 @@ page-many-tabs {
     .SwipedTabs-tabs
     {
         width: fit-content !important;
-    	border-bottom: solid 1px #e6e6e6  !important;
+        border-bottom: solid 1px #e6e6e6  !important;
     }
 
 }
